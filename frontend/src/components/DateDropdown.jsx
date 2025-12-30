@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import { ChevronDown, ChevronUp } from "lucide-react";
 
 const DateDropdown = ({ dates, selectedDate, onChange }) => {
     const [open, setOpen] = useState(false);
@@ -27,7 +28,11 @@ const DateDropdown = ({ dates, selectedDate, onChange }) => {
         <div className='custom-dropdown' ref={dropdownRef}>
             <div className='dropdown-header' onClick={() => setOpen(!open)}>
                 <span style={{ fontWeight: 600 }}>{formattedDate(selectedDate) || "Select Date"}</span>
-                <span className={`arrow ${open ? "up" : "down"}`} />
+                {open ? (
+                    <ChevronUp size={18} color="#2563eb" />
+                ) : (
+                    <ChevronDown size={18} color="#2563eb" />
+                )}
             </div>
 
             {open && (

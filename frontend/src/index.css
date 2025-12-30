@@ -103,14 +103,6 @@ body {
   border-right: 6px solid transparent;
 }
 
-.arrow.down {
-  border-top: 6px solid #2563eb;
-}
-
-.arrow.up {
-  border-bottom: 6px solid #2563eb;
-}
-
 /* dropdown lists */
 .dropdown-list {
   position: absolute;
