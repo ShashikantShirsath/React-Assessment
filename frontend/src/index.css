@@ -1,0 +1,168 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: #f7f8fa; */
+}
+
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 0 12px;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  background: #eee;
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 8px 0;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+  font-weight: 600;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.tabs .active {
+  background: #2563eb;
+  color: white;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  gap: 8;
+}
+
+.card-name {
+  font-weight: 600;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+.card-circular-dot {
+  height: 6px;
+  width: 6px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 3px 2px 0;
+}
+
+.count {
+  color: gray;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 40px;
+  color: #252424;
+}
+
+/* custom dropdown */
+.custom-dropdown {
+  position: relative;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  font-size: 13px;
+  background: white;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.arrow.down {
+  border-top: 6px solid #2563eb;
+}
+
+.arrow.up {
+  border-bottom: 6px solid #2563eb;
+}
+
+/* dropdown lists */
+.dropdown-list {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  z-index: 10;
+  overflow: hidden;
+}
+
+/* dropdown options */
+.dropdown-item {
+  padding: 12px;
+  margin: 4px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.dropdown-item:hover {
+  background: #f1f5ff;
+}
+
+.dropdown-item.selected {
+  background: #eef2ff;
+  font-weight: 600;
+}
+
+.check {
+  color: #2563eb;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 480px;
+  }
+
+  .tabs button {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 420px;
+  }
+}
