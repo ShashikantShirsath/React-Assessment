@@ -1,7 +1,7 @@
 # Strategy Dashboard
 
 ## 🚀 Live Demo
-[https://<your-netlify-url>.netlify.app](https://strategy-dashboard-react.netlify.app/)
+https://shashikantshirsath.github.io/React-Assessment/
 
 ## Tech Stack
 - React (Functional Components)
